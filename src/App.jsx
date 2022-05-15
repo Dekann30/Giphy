@@ -11,10 +11,11 @@ function App() {
   const getGif = async () => {
     const data = await fetch(URL).then(res => res.json())
     setGif(data)
+    console.log(data)
   }
   return (
     <div className="App">
-      <Button />
+      <Button getGif={getGif}/>
     </div>
   );
 }

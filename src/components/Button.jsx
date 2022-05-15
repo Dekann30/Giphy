@@ -1,11 +1,8 @@
-
-
 const Button = (props)=>{
 
     const handleClick = (event)=>{
-        event.preventDefualt()
+        event.preventDefault()
         props.getGif()
-        console.log(props.getGif)
     }
         
     return(
