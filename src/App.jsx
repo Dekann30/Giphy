@@ -15,11 +15,12 @@ function App() {
     setGif(data.data)
     // console.log(data.data)
   }
-
-  useEffect(()=>{getGif(URL)}, [])
+//doesn't actually do anything? Howwould you put an h1 in there?
+  useEffect(()=>{}, [])
 
   return (
     <div className="App">
+      <h1>~Get a Random Gif~</h1>
       <Button getGif={getGif}/>
       <GifDisplay gif={gif} />
     </div>

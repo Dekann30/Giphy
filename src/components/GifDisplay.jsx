@@ -10,7 +10,7 @@ const GifDisplay = ({gif})=>{
         )
     }
 
-    const loading = ()=><h1>Grabbing Gif...</h1>
+    const loading = ()=><h1>Get a Gif...</h1>
 
     return gif ? loaded() : loading()
 }
