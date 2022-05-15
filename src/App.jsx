@@ -1,5 +1,6 @@
 import './App.css';
 import {useState, useEffect} from 'react'
+import Button from './components/Button';
 
 function App() {
   const apiKey = 'EshHSad6GYrA4rRVq2H8y1voM2zAFcPO'
@@ -13,7 +14,7 @@ function App() {
   }
   return (
     <div className="App">
-      
+      <Button />
     </div>
   );
 }
