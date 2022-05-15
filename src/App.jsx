@@ -13,8 +13,11 @@ function App() {
     const response = await fetch(URL)
     const data = await response.json()
     setGif(data.data)
-    console.log(data.data)
+    // console.log(data.data)
   }
+
+  useEffect(()=>{getGif(URL)}, [])
+
   return (
     <div className="App">
       <Button getGif={getGif}/>
